@@ -1,0 +1,31 @@
+{% comment %} {% extends 'base.html' %} {% endcomment %}
+{% load static %} 
+
+
+{% block title %}
+    <title>welcome to - Taskmate 12</title>
+{% endblock title %}
+{% block content %}
+    <div class = "container">
+          {% comment %} <h1>{{welcome_text}}</h1> {% endcomment %}
+        <div class ="row mt-5">
+            <div class = "col-lg-4">
+                <img src="{% static 'images/boot.jpg' %}" alt="Notes" class="rounded-lg shadow" width="360" height="250">
+            </div>    
+
+            <div class = "col-lg-4">
+                <img src="{% static 'images/boot.jpg' %}" alt="Notes" class="rounded-lg shadow" width="360" height="250">
+            </div>    
+ 
+        </div> 
+        <div class = "row mt-5">
+        <div class="col-md-10 offset-md-1">
+       
+            <center><p class="h1 text-primary">Quick and Easy to use ,Anytime! AnYwhere!</p></center>
+            <center><p class="h2 mt-3">"plan your day better ,get your life organise ....."</p></center>
+            
+            <center><a href="{% url 'todolist'%}"><button type="button" class="btn btn-dark mt-3 shadow">Lets Get startted </button></center></a>
+        </div>    
+    </div>   
+{% endblock content %}
+     
